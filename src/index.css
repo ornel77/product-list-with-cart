@@ -11,3 +11,16 @@
   --color-pink-500:hsl(12, 20%, 44%);
   --color-pink-900:hsl(14, 65%, 9%);
 }
+
+.input-number::-webkit-outer-spin-button, .input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number:focus {
+  outline: none;
+}
+
+.input-number {
+  color: white;
+}
