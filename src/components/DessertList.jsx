@@ -1,5 +1,5 @@
 import desserts from "../utils/data.json";
-import DessertCard from "./DessertCard";
+import DessertItem from "./DessertItem";
 
 const DessertList = ({cartList}) => {
   return (
@@ -8,7 +8,7 @@ const DessertList = ({cartList}) => {
 
       <div className="grid md:grid-cols-3 gap-x-6 gap-y-8">
         {desserts.map((dessert) => (
-          <DessertCard dessert={dessert} cartList={cartList} />
+          <DessertItem dessert={dessert} cartList={cartList} />
         ))}
       </div>
     </div>

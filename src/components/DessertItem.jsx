@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const DessertCard = ({ dessert, cartList }) => {
+const DessertItem = ({ dessert, cartList }) => {
   const [qty, setQty] = useState(0);
   return (
     <article>
@@ -27,7 +27,7 @@ const DessertCard = ({ dessert, cartList }) => {
               <input
                 type="number"
                 className="input-number appearance-none block  max-w-8 text-center"
-                value={quantitiesList}
+                value={qty}
                 onChange={(e) => setQty(e.target.value)}
               />
               <button
@@ -62,4 +62,4 @@ const DessertCard = ({ dessert, cartList }) => {
   );
 };
 
-export default DessertCard;
+export default DessertItem;
